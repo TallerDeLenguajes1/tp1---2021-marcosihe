@@ -38,7 +38,7 @@ float powerFunction(float base, int exponent)
         }
         else
         {
-            return 1 / result;
+            return (float)(1 / result);
         }
     }
 }
