@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 float powerFunction(float base, int exponent);
 
@@ -21,13 +22,14 @@ float powerFunction(float base, int exponent)
 {
     float result = base;
     int count = 1;
+    int aux = abs(exponent);
     if (exponent == 0)
     {
         return 1;
     }
     else
     {
-        while (count < exponent)
+        while (count < aux)
         {
             result *= base;
             count++;
